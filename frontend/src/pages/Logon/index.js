@@ -18,10 +18,8 @@ export default function Logon(){
 
     try {
         const response = await api.post('sessions', { id });
-
-        /*localStorage.setItem('ongId', id);
-        localStorage.setItem('ongName', response.data.name);*/
-
+            /*localStorage.setItem('ongId', id);
+            localStorage.setItem('ongName', response.data.name);*/
         history.push('/profile');
     }catch ( err ) {
         alert('Falha no login, tente novamente.');
@@ -48,8 +46,7 @@ export default function Logon(){
                         <FiLogIn size={16} color="#E02041" />
                         Não tenho cadastro
                     </Link>
-                </form>
- 
+                </form> 
             </section>
 
             <img src={heroesImg} alt="Heroes" />
